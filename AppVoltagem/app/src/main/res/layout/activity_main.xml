@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Resistência (R) -->
+    <EditText
+        android:id="@+id/edt_num1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Resistência (R em Ω)"
+        android:inputType="numberDecimal"
+        android:minHeight="56dp"
+        android:padding="12dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Corrente (I) -->
+    <EditText
+        android:id="@+id/edt_num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Corrente (I em A)"
+        android:inputType="numberDecimal"
+        android:minHeight="56dp"
+        android:padding="12dp"
+        android:layout_marginTop="12dp" />
+
+    <!-- Botão Calcular -->
+    <Button
+        android:id="@+id/btn_calc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Calcular Tensão (V)"
+        android:layout_marginTop="16dp" />
+
+    <!-- Resultado -->
+    <TextView
+        android:id="@+id/txv_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado aparecerá aqui"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+</LinearLayout>
